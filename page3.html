@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+
+        #id3{
+           
+           border: 10px black solid;
+           padding-left: 5%;
+           padding-right: 2%;
+           line-height: 200%;
+           background-color:rgb(210, 231, 224);
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+        }
+
+        #r1{
+            position: static;
+            text-align: justify ;
+            font-size: large;
+    
+        }
+
+        #c1{
+            position: static;
+            text-align: justify;
+            font-size: large;
+        }
+        #c2{
+            font-size: large;
+        }
+
+        #References{
+            font-size: large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #exit{
+            
+            font-size: 100%;
+        }
+        #btn2{
+
+            width: 11%;
+            font-size: 120%;
+            margin-left: 40%;
+            cursor: pointer;;
+
+        }
+
+        #btn3{
+
+            width: 8%;
+            font-size: 120%;
+            margin-left: 5%;
+            cursor: pointer;
+        }
+
+
+
+       
+       
+      
+    </style>
+ 
+
+    <script>
+        function Redirect2(){
+            window.location = "file:///D:/doc/page2.html"
+        }
+        
+    </script>
+    <script>
+        function Redirect3(){
+            window.location = "file:///D:/doc/1.html"
+        }
+    </script>
+  
+</head>
+<body>
+    <div id="id3">
+        <div id="result">
+            <h2><u>RESULT</u></h2>
+            <p id="r1">The application successfully captures images and videos from the webcam while allowing users to apply filters and add timestamps. 
+                Users can save their captured media in the desired format, making it a versatile tool for personal or professional use.
+            </p>
+            
+        </div>
+
+        <div id="img" >
+            
+            <center><img  src="Screenshot 2024-07-27 130432.png" alt="img1" style="width: 800px; padding-left: 0%;border: 5px solid black; margin-left: 2%;" height="300px" ><br></center>
+            <center><h4>Directory input</h4></center>
+            
+            <center><img  src="image_1.jpg" alt="img3" style="width: 500px;padding-left:0%; border: 5px solid black; margin-left: 2%;" height="300px" ><br></center>
+            <h4><center>Image Capture And Recording</center></h4>
+           
+            <center><img  src="image_2.jpg" alt="img2" style="width: 500px; padding-left: 0%;border: 5px solid black; margin-left: 2%;" height="300px"  ></center>
+            <h4><center>Applying Filters</center></h4>
+
+
+        </div>
+        <div id="conclusion">
+            <h2><u>Conclusion</u></h2>
+           <p id="c1"> This project demonstrates the capabilities of Python and OpenCV in creating an interactive application for capturing and processing images and videos. The implementation of filters and timestamps adds significant value, making it suitable for various applications. Future enhancements could include:</p>
+            <ul id="c2">
+                <li>Adding more filters and image processing techniques.</li>
+               <li> Implementing a GUI for better user interaction.</li>
+                <li>Allowing for higher resolution video capture and saving options.</li>
+            </ul>
+         
+        </div>
+
+        <div id="References">
+            <h2><u>References</u></h2>
+            <ol>
+                <li><b>OpenCV Documentation:</b> OpenCV Documentation</li>
+                <li><b>Python Documentation:</b> Python Official Documentation</li>
+                <li><b>NumPy Documentation   :</b> NumPy Documentation</li>
+                <li><b>Datetime Documentation:</b> Python Datetime Module</li>
+            </ol>
+
+
+        </div>
+
+
+        
+        
+        <input type="button" value="Previous Page" id="btn2" onclick="Redirect2();">
+        <input type="button" value="Next Page" id="btn3" onclick="Redirect3();">
+
+            
+
+        </div>
+    </div>
+</body>
+</html>

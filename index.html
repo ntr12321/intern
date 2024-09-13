@@ -287,6 +287,34 @@
             height: auto;
         }
     }
+
+    .styled-paragraph {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: justify;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.styled-paragraph:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    background-color: #e0f7fa; /* Change to a light blue color on hover */
+    color: #00796b; /* Change text color on hover */
+}
+
+
+        .styled-paragraph br {
+            content: "";
+            margin: 10px 0; /* Space after line breaks */
+        }
+
 </style>
 
 </head>
@@ -310,10 +338,10 @@
         <button class="btn-section" onclick="document.getElementById('obj').scrollIntoView();">Objectives</button>
         <button class="btn-section" onclick="document.getElementById('tools').scrollIntoView();">Tools & Technologies</button>
         <button class="btn-section" onclick="document.getElementById('code').scrollIntoView();">Code Structure</button>
-        <button class="btn-section" onclick="document.getElementById('result').scrollIntoView();">Result</button>
-        <button class="btn-section" onclick="document.getElementById('conclusion').scrollIntoView();">Conclusion</button>
-        <button class="btn-section" onclick="document.getElementById('references').scrollIntoView();">References</button>
-        <!-- <button class="btn-section" onclick="document.getElementById('certificate').scrollIntoView();">Certificate</button> -->
+        <button class="btn-section" onclick="document.getElementById('User_interactions').scrollIntoView();">User Interactions</button>
+        <button class="btn-section" onclick="document.getElementById('Usage_instructions').scrollIntoView();">User Interactions</button>
+
+
     </div>
 
     <!-- Main content continues here -->
@@ -321,57 +349,128 @@
         <!-- Rest of the sections: Abstract, Introduction, etc. -->
         <div id="abstract" class="section">
             <h2 id ="new"><center>Abstract</center></h2>
-            <p>
-                In the digital era, the ability to capture and process images and videos has become increasingly important for various applications. This project presents a Python-based application that leverages OpenCV to capture images and videos from a webcam, providing features such as real-time filtering and timestamping. Key functionalities include grayscale and sepia filters, alongside a timestamp display on captured media.
+            <p class="styled-paragraph">
+                In the digital era, the ability to capture and process images and videos has become increasingly important for various 
+                applications, ranging from personal documentation to security.This project presents a Python-based application that 
+                leverages OpenCV to capture images and videos from a webcam, providing features such as real-time filtering and timestamping. 
+                The application allows users to interactively capture still images, record videos, and apply visual effects, enhancing the 
+                overall user experience. Key functionalities include the application of grayscale and sepia filters, alongside a timestamp 
+                display on captured media. By offering a user-friendly interface and flexible options for media capture, this application 
+                serves as a valuable tool for both personal and professional use, demonstrating the capabilities of modern computer vision 
+                technology. Future enhancements may include the addition of more filters, a graphical user interface (GUI), and improved 
+                video quality settings.
             </p>
         </div>
 
         <div id="intro" class="section">
             <h2 id ="new"><center>Introduction</center></h2>
-            <p>
-                In today's fast-paced digital world, visual media has become essential for communication and documentation. This project focuses on developing a webcam-based image and video capture application using Python and OpenCV, offering filters like grayscale and sepia, as well as timestamp functionality for enhanced media control and creativity.
+            <p class="styled-paragraph">
+                In today's fast-paced digital world, the significance of visual media has surged dramatically. 
+                From social media interactions to remote working solutions and surveillance systems, images and 
+                videos play an essential role in communication, documentation, and security. As technology continues 
+                to evolve, the accessibility of high-quality image and video capturing tools has become paramount. 
+                Webcams, now ubiquitous in personal computers, laptops, and mobile devices, provide a convenient means 
+                to capture real-time media. This project focuses on developing an application that utilizes these built-in 
+                cameras to capture images and record videos while enhancing the user experience through features such as 
+                filtering and timestamping. The primary objective of the Webcam Image and Video Capture Application is to
+                 create a versatile tool that enables users to harness the power of their webcams for various purposes, 
+                 including photography, video recording, and content creation. Built using Python, a widely-used programming
+                  language, and OpenCV, a powerful open-source computer vision library, the application allows for real-time 
+                  image processing and manipulation. With these technologies, users can easily access webcam functionalities,
+                   transforming their devices into fully capable multimedia tools. One of the standout features of this 
+                   application is its ability to apply different filters to captured frames. Filters like grayscale and 
+                   sepia can significantly alter the visual aesthetic of images and videos, allowing users to express
+                    their creativity and customize their media. Grayscale filtering simplifies the image data by removing
+                     color information, providing a classic and timeless appearance. In contrast, the sepia filter introduces 
+                     a warm, vintage effect that evokes nostalgia and can enhance the storytelling aspect of captured media.
+                      Additionally, the application integrates timestamp functionality, which displays the current date and 
+                      time directly on the captured images and videos. This feature not only aids in organization and documentation 
+                      but also adds a professional touch to the captured media, making it easier for users to recall when specific 
+                      content was created. The interactive nature of the application is designed to provide a seamless user experience.
+                       Users can initiate image capture, video recording, and filter application through simple keyboard commands, 
+                       allowing for quick and efficient media management. This responsiveness is particularly beneficial in scenarios 
+                       where timing is critical, such as during events or while recording spontaneous moments. In summary, the Webcam 
+                       Image and Video Capture Application represents a convergence of accessibility, creativity, and functionality. 
+                       By utilizing Python and OpenCV, this project provides users with a powerful tool to capture and manipulate media 
+                       using their webcams. As we continue to advance into a visually driven society, applications like this become 
+                       increasingly relevant, enabling individuals to document their lives, express their creativity, and leverage 
+                       technology for various multimedia purposes. Future enhancements may focus on expanding filter options, 
+                       implementing advanced image processing techniques, and creating a more intuitive graphical user interface 
+                       (GUI) to further enrich the user experience.
+
             </p>
         </div>
 
         <div id="obj" class="section">
             <h2 id ="new"><center>Objectives</center></h2>
-            <p>
-                The primary objectives of this project are:<br>
-                1. To develop a user-friendly application for capturing images and videos.<br>
-                2. To implement features such as filtering (grayscale, sepia) and timestamping.<br>
-                3. To provide an interactive interface for controlling the capture process.
+            <p class="styled-paragraph">
+                The primary objectives of this project are :
+                <p class="styled-paragraph">To develop a user-friendly application for capturing images and videos.</p>
+                <p class="styled-paragraph"> To implement features such as filtering (grayscale, sepia) and timestamping.</p>
+                <p class="styled-paragraph">To provide an interactive interface for controlling the capture process.</p>
             </p>
         </div>
 
         <div id="tools" class="section">
             <h2 id ="new"><center>Tools & Technologies</center></h2>
-            <ol>
-                <li>Programming Language: Python</li>
-                <li>Libraries:
-                    <ul>
-                        <li>OpenCV (cv2) for image and video processing</li>
-                        <li>NumPy for numerical operations</li>
-                        <li>Datetime for handling timestamps</li>
-                    </ul>
-                </li>
-                <li>Operating System: Compatible with Windows, macOS, and Linux</li>
-            </ol>
+            
+                <p class="styled-paragraph"><b>Programming Language: </b>Python</p>
+                <p class="styled-paragraph"><b>Libraries:</b>
+                   
+                        OpenCV (cv2) for image and video processing ,
+                        NumPy for numerical operations ,
+                        Datetime for handling timestamps .
+                </p>
+                
+                <p class="styled-paragraph"> <b>Operating System:</b> Compatible with Windows, macOS, and Linux</p>
+            
         </div>
 
         <div id="code" class="section">
             <h2 id ="new"><center>Code Structure</center></h2>
-            <p>The key components of the code are:</p>
-            <ol>
-                <li>Webcam Capture: Capturing video from the webcam using OpenCV's VideoCapture class.</li>
-                <li>Image Filtering: Applying filters like Grayscale and Sepia to the captured frames.</li>
-                <li>Timestamp Addition: Displaying the current date and time on the captured images and videos.</li>
-                <li>Grayscale: Converts the image to grayscale, enhancing contrast and simplifying image data.</li>
-            </ol>
+            <p class="styled-paragraph"><b>The key components of the code are:</b></p>
+            
+                <p class="styled-paragraph"><b>Webcam Capture:</b> Capturing video from the webcam using OpenCV's VideoCapture class.</p>
+                <p class="styled-paragraph"><b>Image Filtering:</b> Applying filters like Grayscale and Sepia to the captured frames.</p>
+                <p class="styled-paragraph"><b>Timestamp Addition:</b> Displaying the current date and time on the captured images and videos.</p>
+                <p class="styled-paragraph"><b>Grayscale: </b>Converts the image to grayscale, enhancing contrast and simplifying image data.</p>
+            
         </div>
+
+        <div id="User_interactions" class="section">
+            <h2 id ="new"><center>User Interactions</center></h2>
+            <p class="styled-paragraph">
+                <b>The application listens for specific key presses:</b>
+            </p>
+
+            <p class="styled-paragraph"><b>q:</b> Quit the application.</p>
+            <p class="styled-paragraph"> <b>s:</b> Save the current frame as an image in the specified output folder.
+            <p class="styled-paragraph"><b>v:</b>Start or stop video recording. If recording, the application saves the video in AVI format.</p>
+            <p class="styled-paragraph"><b>f:</b> Cycle through the available filters (grayscale, sepia, none).</p>
+            </p>
+              
+        </div>
+
+
+
+        <div id="Usage_instructions" class="section">
+            <h2 id ="new"><center>Usage Instructions</center></h2>
+            <p class="styled-paragraph">
+                <b>Running the Application:</b>
+            </p>
+            <p class="styled-paragraph">The user is prompted to enter the directory where images and videos will be saved.</p>
+            <p class="styled-paragraph">The webcam feed is displayed in a window.</p>
+            <p class="styled-paragraph">Press 's' to save the current frame as an image. The images are saved in the specified output folder.</p>
+            <p class="styled-paragraph">Press 'v' to start or stop video recording. The recorded videos are saved in the specified output folder with a timestamped filename.</p>
+            <p class="styled-paragraph">Press 'f' to apply filters to the webcam feed. The filters can be cycled through (none, grayscale, sepia).</p>
+            <p class="styled-paragraph">Press 'q' to quit the application.</p>
+              
+        </div>
+
 
         <div id="result" class="section">
             <h2 id ="new"><center>Result</center></h2>
-            <p>
+            <p class="styled-paragraph">
                 The application successfully captures images and videos from the webcam while allowing users to apply filters and add timestamps. Users can save media in their desired format, making it a versatile tool for both personal and professional use.
             </p>
             <img src="Screenshot 2024-07-27 130432.png" alt="Captured img" class="result-img1">
@@ -381,24 +480,24 @@
 
         <div id="conclusion" class="section">
             <h2 id ="new"><center>Conclusion</center></h2>
-            <p>
+            <p class="styled-paragraph">
                 This project demonstrates the power of Python and OpenCV in creating interactive media capture applications. With features like filters and timestamps, it adds significant value for various uses. Future enhancements could include a GUI, additional filters, and higher-resolution video capture options.
             </p>
         </div>
 
         <div id="references" class="section">
             <h2 id ="new"><center>References</center></h2>
-            <ol>
-                <li>OpenCV Documentation</li>
-                <li>Python Documentation</li>
-                <li>NumPy Documentation</li>
-                <li>Datetime Documentation</li>
-            </ol>
+        
+            <p class="styled-paragraph">OpenCV Documentation</p>
+            <p class="styled-paragraph">Python Documentation</p>
+            <p class="styled-paragraph">NumPy Documentation</p>
+            <p class="styled-paragraph">Datetime Documentation</p>
         </div>
 
         <div id="certificate" class="section">
             <h2 id ="new"><center>Certificate</center></h2>
             <button class="btn-show-certificate" onclick="nextpage()" >Show Certificate</button>
+            <button class="btn-show-certificate" onclick="nextpage1()" >Github</button>
 
         </div>
     </div>
@@ -410,10 +509,16 @@
     </footer>
 
     <script>
-        function nextpage() {
-            window.location.href = 'page3.html'; // Replace 'nextpage.html' with the URL of the next page
+        function nextpage1() {
+            window.location.href = 'https://github.com/madhukumaryaroju/Intern'; // Replace 'nextpage.html' with the URL of the next page
         }
     </script>
+
+<script>
+    function nextpage() {
+        window.location.href = 'page3.html'; // Replace 'nextpage.html' with the URL of the next page
+    }
+</script>
 </body>
 
 </html>
